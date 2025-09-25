@@ -1,0 +1,29 @@
+ignore_merge_commits = true
+generate_mono_repository_package_tags = true
+generate_mono_repository_global_tag = false
+
+[git_hooks.commit-msg]
+script = """#!/bin/bash
+set -e
+cog verify --file $1
+cog check
+tofu fmt -recursive
+"""
+
+[commit_types]
+chore = { changelog_title = "", omit_from_changelog = true }
+ci = { changelog_title = "", omit_from_changelog = true }
+perf = { changelog_title = "", omit_from_changelog = true }
+
+[changelog]
+path = "CHANGELOG.md"
+template = "remote"
+remote = "github.com"
+repository = "chatelain-io"
+owner = "terraform-modules"
+authors = []
+
+[packages]
+gcp-iam-service-account = { path = "modules/gcp/iam/service-account" }
+gcp-iam-role-assignment = { path = "modules/gcp/iam/role-assignment" }
+gcp-iam-oidc-workloadidentity-pool = { path = "modules/gcp/iam/oidc-workloadidentity-pool" }
