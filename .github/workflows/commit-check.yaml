@@ -1,6 +1,12 @@
 name: Conventional Commit Check
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
 
 jobs:
   cog_check_job:
