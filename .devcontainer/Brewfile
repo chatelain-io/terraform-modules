@@ -1,0 +1,37 @@
+tap "Azure/kubelogin"
+
+# Homebrew tools
+brew "gcc"
+brew "bash-completion@2"
+
+# Development tools
+brew "gh"
+brew "go@1.24"
+brew "pre-commit"
+brew "node@22"
+brew "uv"
+brew "cocogitto"
+
+# IaC tools
+brew "opentofu"
+
+# Kubernetes tools
+brew "kubernetes-cli@1.32"
+brew "krew"
+brew "kind"
+brew "helm"
+brew "Azure/kubelogin/kubelogin"
+brew "argocd"
+brew "k9s"
+
+# Cloud tools
+brew "azure-cli"
+
+# Utilities
+brew "jq"
+brew "yq"
+brew "inotify-tools"
+brew "direnv"
+
+# AI tools
+brew "kubectl-ai"
