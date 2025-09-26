@@ -1,0 +1,26 @@
+name: Pull Request
+
+on:
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+  check_pr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    name: check conventional commit compliance
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          fetch-depth: 0
+
+      - name: Semver release
+        uses: cocogitto/cocogitto-action@v3
+        id: release
+        with:
+          check: true
+          dry-run: true
+
