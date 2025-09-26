@@ -16,3 +16,4 @@ perf = { changelog_title = "", omit_from_changelog = true }
 [packages]
 gcp-iam-service-account = { path = "modules/gcp/iam/service-account" }
 gcp-iam-role-assignment = { path = "modules/gcp/iam/role-assignment" }
+oidc-workloadidentity-pool = { path = "modules/gcp/iam/oidc-workloadidentity-pool" }
