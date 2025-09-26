@@ -5,7 +5,7 @@ script = """#!/bin/bash
 set -e
 cog verify --file $1
 cog check
-tofu fmt -recursive $1
+tofu fmt -recursive
 """
 
 [commit_types]
