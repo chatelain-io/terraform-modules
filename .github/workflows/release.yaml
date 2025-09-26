@@ -27,10 +27,10 @@ jobs:
         id: release
         uses: cocogitto/cocogitto-action@c7a74f5406bab86da17da0f0e460a69f8219a68c
         with:
-          release: true
           git-user: "${{ github.actor }}"
           git-user-email: "${{ github.actor }}@users.noreply.github.com"
-          dry-run: "${{ github.event.inputs.debug == 'true' }}"
+          dry-run: "${{ github.event.inputs.debug }}"
+          release: "${{ github.event.inputs.debug != 'true' }}"
 
       - name: Debug mode
         if: ${{ github.event.inputs.debug == 'true' }}

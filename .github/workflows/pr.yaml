@@ -22,7 +22,6 @@ jobs:
         uses: cocogitto/cocogitto-action@v3
         id: release
         with:
-          release: true
           check: false
           dry-run: true
 
