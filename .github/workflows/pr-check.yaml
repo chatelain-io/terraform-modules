@@ -19,7 +19,8 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Semver release
-        uses: cocogitto/cocogitto-action@v3
+        #uses: cocogitto/cocogitto-action@v3
+        uses: chatelain-io/cocogitto-action@hotfix/multiple-version-dry-run
         id: release
         with:
           check: true
