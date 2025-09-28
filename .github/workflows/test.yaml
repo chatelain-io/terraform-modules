@@ -1,0 +1,25 @@
+name: Conventional Commit Check
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  cog_check_job:
+    runs-on: ubuntu-latest
+    name: check conventional commit compliance
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          fetch-depth: 0
+
+      - name: Install
+        uses: cocogitto/cocogitto-action@c7a74f5406bab86da17da0f0e460a69f8219a68c
+        with:
+          check: false
+
+      - name: command
+        run: |
+          cog bump --auto --dry-run --skip-untracked --pre test-asdad 2> /dev/null  | jq -R '.' | jq -s '.'
+
