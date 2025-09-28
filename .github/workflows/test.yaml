@@ -14,5 +14,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Conventional commits check
+      - name: Install
         uses: cocogitto/cocogitto-action@c7a74f5406bab86da17da0f0e460a69f8219a68c
+        with:
+          check: false
+
+      - name: command
+        run: |
+          cog bump --auto --dry-run --skip-untracked --pre test-asdad 2> /dev/null  | jq -R '.' | jq -s '.'
+
