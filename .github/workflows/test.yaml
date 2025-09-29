@@ -14,10 +14,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install
-        uses: cocogitto/cocogitto-action@c7a74f5406bab86da17da0f0e460a69f8219a68c
-        with:
-          check: false
+      - name: Install devbox
+        uses: jetify-com/devbox-install-action@a0d2d53632934ae004f878c840055956d9f741b0
 
       - name: command
         run: |

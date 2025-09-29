@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
+  "packages": [
+    "kubelogin@0.2",
+    "gh@2",
+    "go@1.24",
+    "pre-commit@4",
+    "nodejs@24",
+    "uv@0.8",
+    "cocogitto@6",
+    "opentofu@1.10",
+    "kubectl@1.33",
+    "act@0.2",
+    "azure-cli@2"
+  ],
+  "shell": {
+    "init_hook": [
+      "source ./scripts/setup/completion.sh"
+    ],
+    "scripts": {
+      "release": [
+        "echo \"Error: no release specified\" && exit 1"
+      ]
+    }
+  }
+}
