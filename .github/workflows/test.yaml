@@ -24,10 +24,10 @@ jobs:
 
       - name: command
         run: |
-          cog bump --auto --dry-run --skip-untracked --pre test-asdad 2> /dev/null  | jq -R '.' | jq -s '.'
+          devbox run -- cog bump --auto --dry-run --skip-untracked --pre test-asdad 2> /dev/null  | jq -R '.' | jq -s '.'
 
 
       - name: command2
         run: |
-          cog bump --auto --dry-run
+          devbox run -- cog bump --auto --dry-run
 

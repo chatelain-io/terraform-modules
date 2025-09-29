@@ -18,9 +18,7 @@
       ". ./scripts/setup/completion.sh"
     ],
     "scripts": {
-      "release": [
-        "echo \"Error: no release specified\" && exit 1"
-      ]
+
     }
   }
 }
