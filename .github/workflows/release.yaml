@@ -26,7 +26,7 @@ jobs:
           git-user-email: "${{ github.actor }}@users.noreply.github.com"
 
       - name: Bump version
-        run: cog bump --auto && git push origin main --tags
+        run: cog bump --auto
 
       # - name: Generate Changelog
       #   run: cog changelog --at ${{ steps.release.outputs.version }} -t full_hash > GITHUB_CHANGELOG.md

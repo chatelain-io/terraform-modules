@@ -2,6 +2,11 @@ ignore_merge_commits = true
 generate_mono_repository_package_tags = true
 generate_mono_repository_global_tag = false
 
+post_bump_hooks = [
+  "git push",
+]
+
+
 [git_hooks.commit-msg]
 script = """#!/bin/bash
 set -e
