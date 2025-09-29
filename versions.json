@@ -1,0 +1,19 @@
+{
+  "packages": {
+    "gcp-iam-service-account": {
+      "current_version": "0.0.1",
+      "next_version": "0.0.2",
+      "hasChanges": true
+    },
+    "gcp-iam-role-assignment": {
+      "current_version": "0.0.1",
+      "next_version": "",
+      "hasChanges": false
+    },
+    "gcp-iam-oidc-workloadidentity-pool": {
+      "current_version": "0.0.1",
+      "next_version": "",
+      "hasChanges": false
+    }
+  }
+}

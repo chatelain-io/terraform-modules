@@ -2,27 +2,29 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
-## gcp-iam-service-account-0.0.1 - 2025-09-29
+## gcp-iam-service-account-0.1.0 - 2025-10-01
 #### Bug Fixes
-- add missing newline at the end of variables.tf (#6) - (fbc5413) - Alexandre Chatelain
-- remove outdated changelog files for IAM roles and service accounts - (597aaf4) - Alexandre Chatelain
-- test - (dfa2d7d) - Alexandre Chatelain
+- **(gcp-iam-oidc-workloadidentity-pool)** test1 - (80f3c8c) - Alexandre Chatelain
+#### Features
+- test some workflows - (7b62605) - Alexandre Chatelain
+
+- - -
+
+## gcp-iam-service-account-0.0.1 - 2025-10-01
+#### Bug Fixes
+- **(gcp-iam-oidc-workloadidentity-pool)** test1 - (80f3c8c) - Alexandre Chatelain
+
+- - -
+
+## gcp-iam-service-account-0.0.1 - 2025-10-01
+#### Bug Fixes
+- **(gcp-iam-oidc-workloadidentity-pool)** test1 - (80f3c8c) - Alexandre Chatelain
 
 - - -
 
 ## gcp-iam-service-account-0.0.1 - 2025-09-29
 #### Bug Fixes
-- add missing newline at the end of variables.tf (#6) - (fbc5413) - Alexandre Chatelain
-- remove outdated changelog files for IAM roles and service accounts - (597aaf4) - Alexandre Chatelain
-- test - (dfa2d7d) - Alexandre Chatelain
-
-- - -
-
-## gcp-iam-service-account-0.0.1 - 2025-09-29
-#### Bug Fixes
-- add missing newline at the end of variables.tf (#6) - (fbc5413) - Alexandre Chatelain
-- remove outdated changelog files for IAM roles and service accounts - (597aaf4) - Alexandre Chatelain
-- test - (dfa2d7d) - Alexandre Chatelain
+- **(gcp-iam-oidc-workloadidentity-pool)** test1 - (80f3c8c) - Alexandre Chatelain
 
 - - -
 

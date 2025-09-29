@@ -2,21 +2,27 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
-## gcp-iam-oidc-workloadidentity-pool-0.1.0 - 2025-09-29
-#### Features
-- **(oidc-workloadidentity-pool)** Add new module - (e6bb9fc) - Alexandre Chatelain
+## gcp-iam-oidc-workloadidentity-pool-0.0.1 - 2025-10-01
+#### Bug Fixes
+- **(gcp-iam-oidc-workloadidentity-pool)** test1 - (80f3c8c) - Alexandre Chatelain
 
 - - -
 
-## gcp-iam-oidc-workloadidentity-pool-0.1.0 - 2025-09-29
-#### Features
-- **(oidc-workloadidentity-pool)** Add new module - (e6bb9fc) - Alexandre Chatelain
+## gcp-iam-oidc-workloadidentity-pool-0.0.1 - 2025-10-01
+#### Bug Fixes
+- **(gcp-iam-oidc-workloadidentity-pool)** test1 - (80f3c8c) - Alexandre Chatelain
 
 - - -
 
-## gcp-iam-oidc-workloadidentity-pool-0.1.0 - 2025-09-29
-#### Features
-- **(oidc-workloadidentity-pool)** Add new module - (e6bb9fc) - Alexandre Chatelain
+## gcp-iam-oidc-workloadidentity-pool-0.0.1 - 2025-10-01
+#### Bug Fixes
+- **(gcp-iam-oidc-workloadidentity-pool)** test1 - (80f3c8c) - Alexandre Chatelain
+
+- - -
+
+## gcp-iam-oidc-workloadidentity-pool-0.0.1 - 2025-09-29
+#### Bug Fixes
+- **(gcp-iam-oidc-workloadidentity-pool)** test1 - (80f3c8c) - Alexandre Chatelain
 
 - - -
 

@@ -18,11 +18,16 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: Semver release
-        #uses: cocogitto/cocogitto-action@v3
-        uses: chatelain-io/cocogitto-action@hotfix/multiple-version-dry-run
-        id: release
-        with:
-          check: true
-          dry-run: true
+      - name: Setup cocogitto
+        uses: ./.github/actions/setup-cocogitto
+
+      - name: Check version
+        run: |
+          cog changelog
+          cog changelog -t monorepo_remote
+
+      - name: Test bump version
+        run: |
+          cog bump --auto  --dry-run || exit 1
+          git diff --exit-code || exit 1
 

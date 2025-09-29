@@ -14,5 +14,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Conventional commits check
-        uses: cocogitto/cocogitto-action@c7a74f5406bab86da17da0f0e460a69f8219a68c
+      - name: Setup cocogitto
+        uses: ./.github/actions/setup-cocogitto
+
+      - name: Check version
+        run: |
+          cog changelog
+          cog changelog -t monorepo_remote
+
+      - name: Test bump version
+        run: cog bump --auto  --dry-run || exit 1
