@@ -15,7 +15,3 @@
 
 #source <(chainsaw completion bash)
 #source <(npm completion)
-
-if (echo "${1}" | grep -Eiv '^([01]|(true)|(false))$' >/dev/null); then
-  cog verify "${1}" || exit 1
-fi
