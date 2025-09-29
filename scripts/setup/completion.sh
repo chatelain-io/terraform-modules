@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 source <(kubelogin completion bash)
 source <(gh completion bash)
 source <(kind completion bash)
