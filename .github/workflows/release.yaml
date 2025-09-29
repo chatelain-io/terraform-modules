@@ -21,15 +21,18 @@ jobs:
         id: release
         uses: cocogitto/cocogitto-action@c7a74f5406bab86da17da0f0e460a69f8219a68c
         with:
-          release: true
+          check: true
           git-user: "${{ github.actor }}"
           git-user-email: "${{ github.actor }}@users.noreply.github.com"
 
-      - name: Generate Changelog
-        run: cog changelog --at ${{ steps.release.outputs.version }} -t full_hash > GITHUB_CHANGELOG.md
+      - name: Bump version
+        run: cog bump --auto
 
-      - name: Upload github release
-        uses: softprops/action-gh-release@6cbd405e2c4e67a21c47fa9e383d020e4e28b836
-        with:
-          body_path: GITHUB_CHANGELOG.md
-          tag_name: ${{ steps.release.outputs.version }}
+      # - name: Generate Changelog
+      #   run: cog changelog --at ${{ steps.release.outputs.version }} -t full_hash > GITHUB_CHANGELOG.md
+
+      # - name: Upload github release
+      #   uses: softprops/action-gh-release@6cbd405e2c4e67a21c47fa9e383d020e4e28b836
+      #   with:
+      #     body_path: GITHUB_CHANGELOG.md
+      #     tag_name: ${{ steps.release.outputs.version }}
