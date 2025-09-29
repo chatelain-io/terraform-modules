@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-eval "$(direnv hook bash)"
-source <(devbox completion bash)
+#eval "$(direnv hook bash)"
+#source <(devbox completion bash)
 
 #source <(kubelogin completion bash)
 #source <(gh completion bash)
