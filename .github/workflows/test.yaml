@@ -29,5 +29,5 @@ jobs:
 
       - name: command2
         run: |
-          devbox run -- cog bump --auto --dry-run
+          devbox run -- cog bump --auto --dry-run --skip-untracked
 
