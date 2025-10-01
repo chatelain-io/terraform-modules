@@ -19,4 +19,8 @@ variable "hello4" {
 variable "hello4" {
   type = string
 }
+variable "hello5" {
+  type = string
+}
+
 
