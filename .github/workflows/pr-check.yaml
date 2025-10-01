@@ -26,3 +26,6 @@ jobs:
           cog changelog
           cog changelog -t monorepo_remote
 
+      - name: Test bump version
+        run: cog bump --auto  --dry-run || exit 1
+
