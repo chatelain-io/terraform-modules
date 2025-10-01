@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## gcp-iam-service-account-0.0.1 - 2025-10-01
+#### Bug Fixes
+- **(gcp-iam-oidc-workloadidentity-pool)** test1 - (80f3c8c) - Alexandre Chatelain
+
+- - -
+
 ## gcp-iam-service-account-0.0.1 - 2025-09-29
 #### Bug Fixes
 - **(gcp-iam-oidc-workloadidentity-pool)** test1 - (80f3c8c) - Alexandre Chatelain
