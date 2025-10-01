@@ -22,5 +22,7 @@ jobs:
         uses: ./.github/actions/setup-cocogitto
 
       - name: Check version
-        run: cog changelog
+        run: |
+          cog changelog
+          cog changelog -t monorepo_remote
 
